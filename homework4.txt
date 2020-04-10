@@ -1,2 +1,7 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
+
+github repo 등에 push할 때, push하기를 원치 않는 폴더나 파일이 존재할 수 있다. 이러한 것들의 이름을 .gitignore에 텍스트로 명시해줌으로써 해당 파일(폴더)를 무시하도록(push되지 않도록) 만들 수 있다.
+
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+
+다른 사용자가 github repo에 함부로 접근 혹은 push하는 것을 막기 위해, 해당 repo에 push할 권한이 있는 사람이 사용자 본인임을 '인증'하는 장치가 필요하다. 이 인증 장치가 SSH key이고, 이 key에는 private key와 public key가 있다.
