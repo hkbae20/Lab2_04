@@ -1,2 +1,6 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
+git에서 특정 파일이나 디렉토리를 관리하고 싶지 않을 때, .gitignore에 특정 파일과 디렉토리를 적으면 .gitignore에 있는 것들은 git에서 관리되지 않게 된다.
+
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+github repository를 사용할 때 자신 계정을 입증하기 위해 username과 password를 이용한다. SSH key는 username과 password를 매번 입력하는 것 대신에 자신을 입증하는 방법이다.
+SSH key는 한 쌍으로 주어진다. public key는 github같은 공공적인 곳에 공유되며  private key는 자신의 컴퓨터에만 저장된다. 두 key가 일치하면 접근할 수 있는 권한을 얻는다.
