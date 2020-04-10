@@ -25,9 +25,15 @@ int main()
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+	for (int i = 0; i < arrsize; i++) {
+		int number_of_smaller_elements = 0;
+		for (int j = 0; j < arrsize; j++) {
+			if (arr[i] > arr[j]) {
+				number_of_smaller_elements++;
+			}
+		}
+		output[i] = number_of_smaller_elements;
+	}
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
