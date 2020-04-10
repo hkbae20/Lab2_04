@@ -28,6 +28,15 @@ int main()
 	/***********************************
 	Implement the code here!
 	************************************/
+	for (int i = 0; i < arrsize; i += 1) {
+		int cnt = 0;
+		for (int j = 0; j < arrsize; j += 1) {
+			if (i == j) continue;
+			if (arr[j] < arr[i]) cnt += 1;
+		}
+		output[i] = cnt;
+	}
+
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
