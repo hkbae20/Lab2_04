@@ -9,6 +9,7 @@ int main()
 	const int arrsize = 10;
 	int* arr = new int[arrsize];
 	srand((unsigned int)time(NULL));
+	int count = 0;
 	cout << "Array arr: " ;
 	for (int i = 0; i < arrsize; i++)
 	{
@@ -25,9 +26,15 @@ int main()
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+	for (int i = 0; i < arrsize; i++) {
+		for (int j = 0; j < arrsize; j++) {
+			if (arr[i] > arr[j]) {
+				count++;
+			}
+		}
+		output[i] = count;
+		count = 0;
+	}
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
