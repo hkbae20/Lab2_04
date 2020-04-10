@@ -1,2 +1,9 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
+It is a text file that lists all the files that are ignored by Git.
+The purpose is to prevent from committing rubbish files that will not be helpful, and thus making the Git cleaner.
+
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+The purpose of the SSH key pair is to allow users to push to Github without having to type in the username and password every time.
+A pair consists of a public key and a private key. The private key is stored on one's local computer, and the public key on Github.
+When the private key matches the public key, the user can gain access.
+Although it seems unsafe, it is used because with SSH encryption, it is impossible for someone to reverse engineer a private key by only looking at the public key.
