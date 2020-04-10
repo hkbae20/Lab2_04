@@ -1,2 +1,4 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
+.gitignore is a text file that tells git which files, patterns, or directories should be ignored.  
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+A SSH key is like an ID card for the SSH protocol. With a SSH key, you can connect to GitHub without typing your username or password every time. Github users need an SSH key pair in order to gain access to a system using the key. Github users want to access their system with their devices, while preventing others accessing without authorization. Therefore, they create an SSH key pair, and use it to register their devices to their system.
