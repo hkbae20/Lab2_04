@@ -1,4 +1,4 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
-지금내 파일 중 git에 안올릴 부분을담아 git이 이를 무시할 수 있도록 하는 텍스트파일이다. 
+지금 내 파일 중 git에 안올릴 부분을 .gitignore txt에 담아 git이 이를 무시할 수 있도록 하는 텍스트 파일이다. 
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
-온라인으로 암호를 보낼 때 모든 데이터를 암호화하는 방식이 SSH인데, 이 때 글자들이 암호화된 순서를 user에게만 알려눈는 것이 SSH key pair이다.
+온라인으로 암호를 보낼 때 모든 데이터를 순서에 따라 암호화하는 방식이 SSH인데, 이 때 글자들이 암호화된 순서를 user에게만 알려주는 것이 SSH key pair이다.
