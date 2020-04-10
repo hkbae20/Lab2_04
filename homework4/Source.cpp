@@ -25,9 +25,9 @@ int main()
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+	for(int i = 0; i < arrsize; i++){
+		for(int j = 0; j < arrsize; j++){
+			
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
