@@ -22,12 +22,19 @@ int main()
 	//For example, if arr is given as [5,8,5,6,8,1,5,9,5,8], 
 	//output should be [1,6,1,5,6,0,1,9,1,6]. 
 
-	int* output = new int[arrsize];
+	
+	int* output = new int[arrsize]{0,};
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+
+	for (int i = 0; i < arrsize; i++)
+	{
+		for (int j = 0; j < arrsize; j++)
+		{
+			if (arr[i] > arr[j]) output[i]++;
+		}
+	}
+
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
