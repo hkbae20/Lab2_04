@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <time.h>
+#include <cstdlib>
 using namespace std;
 
 
@@ -9,7 +10,7 @@ int main()
 	const int arrsize = 10;
 	int* arr = new int[arrsize];
 	srand((unsigned int)time(NULL));
-	cout << "Array arr: " ;
+	cout << "Array arr: ";
 	for (int i = 0; i < arrsize; i++)
 	{
 		arr[i] = (rand() % 10);
@@ -24,7 +25,16 @@ int main()
 
 	int* output = new int[arrsize];
 	cout << "Array output: ";
-
+	int num;
+	for (int i = 0; i < arrsize; i++) {
+		num = 0;
+		for (int j = 0; j < arrsize; j++) {
+			if (arr[i] > arr[j]) {
+				num++;
+			}
+		}
+		output[i] = num;
+	}
 	/***********************************
 	Implement the code here!
 	************************************/
