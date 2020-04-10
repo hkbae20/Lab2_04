@@ -1,6 +1,5 @@
 
 1. What is .gitignore? You can write the answer either in Korean or English.
-
 git에서 특정 파일 혹은 디렉토리를 git 버전 관리 대상에서 제외하고자 할 때 그 파일 목록을 지정하는 파일을 말한다. 특정 파일들은 관리할 필요가 없는데, 그 예시로, 프로젝트 설정파일이나 자동으로 생성되는 로그파일(*.log), 빌드할 때 생기는 컴파일 된 파일(*.class)와 같은 것들이 있다. 따라서 이런 관리가 필요 없는 파일들을 git이 track하지 않도록 .gitignore을 설정하는 것이다. .git 파일이 있는 최상위 디렉토리로 이동한 후에 정해진 명령어를 통해 .gitignore 파일을 만든다. 그 후에 그 안의 내용을 채우면 된다. 이미 버전 관리에 포함되어 있는 파일들은 .gitignore에 기록하더라도 git이 버전 관리에서 제외시키지 않는다. 따라서 이러한 경우에는 수동으로 해당 파일들을 버전 관리에서 제외시켜주어야 한다.
 
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
