@@ -30,6 +30,7 @@ int main()
 	************************************/
 
 	for (int i = 0; i < arrsize; i++) {
+		output[i] = rand() % 10;
 		cout << output[i] << " ";
 	}
 	return 0;
