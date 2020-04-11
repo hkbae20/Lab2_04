@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <time.h>
+#include <cstdlib>
 using namespace std;
 
 
@@ -25,9 +26,14 @@ int main()
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+	/********** Implementation **********/
+	for (int i = 0; i < arrsize; i++) {
+		output[i] = 0;
+		for (int j = 0; j < arrsize; j++) {
+			if (i != j && arr[i] > arr[j]) output[i]++;
+		}
+	}
+	/************************************/
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
