@@ -1,2 +1,14 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+
+A1) .gitignore은 깃에서 특정한 파일이나 디렉토리를 관리 대상에서 제외할 때 사용하는 개념이다. 
+.gitignore 자체는 하나의 파일이며 이는 항상 프로젝트에서 최상위 디렉토리에 존재해야한다. 
+이를 활용하면 기본적인 설정에 포함되는 파일이나 반복적으로 생성되는 로그 파일들을 효과적으로 무시할 수 있다.
+
+A2)
+SSH 키 페어는 어떤 서버에 접속할때 비밀번호 대신 특정한 키를 제출하는 보안 방식을 의미한다.
+이러한 보안 방법은 일반적인 비밀번호보다 높은 수준의 보안을 제공하며 로그인 없이 자동으로 서버에 접속할 수 있다는 장점이 있다.
+이러한 장점 때문에 깃헙 유저들은 단순한 깃헙 계정 보안 뿐만 아니라 SSH 키 페어를 필요로 한다.
+윈도우에서 SSH 키는 ssh-keygen 프로그램을 사용하여 쉽게 만들 수 있다.
+SSH 키는 공개된 키와 비공개 키로 나누어져서 작동한다. 우리가 접속할 서버에 관여하는 리모트 머신에는 공개키가 존재하고 우리가 직접 사용하는 로컬 머신에 비공개키가 존재한다.
+즉, 비공개키가 있는 장치에서 서버에 접속을 시도하면 두 키를 비교하여 둘이 일치할 때 접속할 수 있도록 하는 보안 방법이다.
