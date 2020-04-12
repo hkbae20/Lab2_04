@@ -28,6 +28,20 @@ int main()
 	/***********************************
 	Implement the code here!
 	************************************/
+	for (int i = 0; i < arrsize; i++)
+	{
+		output[i] = 0;
+	}
+	for (int i = 0; i < arrsize; i++)
+	{
+		for (int b = 0; b < arrsize; b++)
+		{
+			if (arr[i] > arr[b])
+			{
+				output[i]++;
+			}
+		}
+	}
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
