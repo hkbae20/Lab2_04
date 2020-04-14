@@ -21,10 +21,22 @@ int main()
 	//whose element indiciates how many elements in arr is smaller than arr[i].
 	//For example, if arr is given as [5,8,5,6,8,1,5,9,5,8], 
 	//output should be [1,6,1,5,6,0,1,9,1,6]. 
-
+	int count=0;
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
+	for (int i = 0; i < arrsize; i++) {
+		for (int j = 0; j < arrsize; j++) {
+			if (arr[i] - arr[j] > 0) {
+				count++;
+				output[i] = count;
+			}
+		}
+		if (count == 0) {
+			output[i] = 0;
+		}
+		count = 0;
+	}
 	/***********************************
 	Implement the code here!
 	************************************/
