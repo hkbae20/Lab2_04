@@ -6,9 +6,8 @@ commit함으로써 어떠한 흐름을 따라 개발이 이루어져왔는지를
 그러나 개발에 이용되는 파일 중에는 git의 추적이 필요한 것, 꼭 추적하지는
 않아도 되는 것들이 있을 수 있다. 이렇게 git이 몇몇 파일에 대해서는 추적이
 이루어지지 않도록 설정할 필요가 있는데, 이때 이용되는 것이 .gitignore이다.
-.gitignore는 추적을 원하지 않는 파일들을 git이 무시할 수 있도록 해주는
-파일을 말하며, git이 무시해야 할 파일들을 지칭하는 목록을 내용으로 담고
-있다. 
+.gitignore는 추적을 하지 않을 파일들을 git이 무시할 수 있도록 해주는
+파일로, git이 무시해야 할 파일들을 지칭하는 목록을 내용으로 담고 있다. 
 
 2. Why do GitHub users need an SSH key pair? (Users can use either SSH
    key pair or github account info.) Please write down a brief explanation
