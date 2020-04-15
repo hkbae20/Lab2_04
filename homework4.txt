@@ -1,4 +1,4 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
-.gitignore란 특정 파일을 깃에서 관리하지 않도록 제외시킬 때 제외할 내용을 이 파일 안에 넣어 사용하는 파일이다.
+.gitignore is a file that is used to include the contents to be excluded when excluding a specific file from Git management.
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
-SSH key는 컴퓨터들이 안전하게 통신하기 위해 사용되는 프로토콜 key이다. Github의 사용자들은 파일을 수정하여 올리는 작업이 본인의 컴퓨터에서 이루어지는 것이 맞다는 것을 인증하기 위해 이 SSH key를 필요로 한다.
+The SSH key is a protocol key used for computers to communicate securely. Github users need this SSH key to authenticate that uploading and modifying files is done on their own computer.
