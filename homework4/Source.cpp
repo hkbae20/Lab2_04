@@ -30,6 +30,12 @@ int main()
 	************************************/
 
 	for (int i = 0; i < arrsize; i++) {
+		int k = 0;
+		for (int n = 0; n < arrsize; n++) {
+			if (arr[i] > arr[n])
+				k += 1;
+		}
+		output[i] = k;
 		cout << output[i] << " ";
 	}
 	return 0;
