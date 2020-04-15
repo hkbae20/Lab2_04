@@ -5,4 +5,4 @@ github에 gitignore 프로젝트로 들어가면 다른사람들이 만들어놓
 
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
 github에 접속하기 위해 매번 아이디와 비밀번호로 로그인해야하는 부담을 줄이기 위해 SSH key pair를 이용하게 된다.
-SSH key는 Secured Shell key의 약자로 시스템간의 암호화된 인증(통신)을 위해 사용하는 SSH protocol에 사용되는 key이다.
+SSH key는 Secured Shell key의 약자로 시스템간의 암호화된 인증(통신)을 위해 사용하는 SSH protocol에 사용되는 key이다.  
