@@ -1,2 +1,19 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
+
+git에서 다루지 않을 파일, 혹은 디렉토리를 지정하기 위한 파일 형식이다.
+예를 들어, 프로그래밍 중 임시적으로 생성되는 로그 파일이나 설정 관리 파일 등은 git에서 다룰 필요가 없으므로,
+.gitignore 파일에 다루지 않을 파일 형식을 기입하면 git에서 그 파일들을 무시할 수 있다.
+
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+
+클라이언트는 로그인 시 패스워드를 사용하거나, SSH key pair를 사용할 수 있다.
+하지만 패스워드는 암호화 되어 서버에 저장되어도 그 길이가 짧고 복잡하지 않아 해킹에 취약할 수 있다
+그래서 SSH 서버는 암호 대신 SSH key pair로 인증을 하는데, 이는 public key와 private key로 구성되어있다.
+private key는 클라이언트만 가지고 있으며, 클라이언트는 이 private key로 public key를 암호화하고 서버에는 public key만 업로드한다.
+인증할 때에, 서버는 클라이언트에게 랜덤 챌린지를 전송하고, 클라이언트는 이 챌린지를 private key를 통해 암호화하여 서버에 보낸다.
+그러면 서버는 암호화된 메세지를 public key로 해석하여 이 결과가 처음에 보낸 랜덤 챌린지와 일치하는지 확인하고, 일치하면 클라이언트를 인증한다.
+이 방법이 유효한 이유는 public key로 해석할 수 있는 메세지는 이를 생성한 private key로만 생성할 수 있기 때문이다.
+즉, 다른 사용자는 랜덤 챌린지, 혹은 public key를 알아도 그를 암호화할 수 있는 private key가 없기 때문에 인증이 불가능해지는 것이다.
+따라서 SSH key pair를 사용하면 비밀번호보다 높은 수준의 보안이 가능하다.
+또한, public key를 서버에 등록해놓았기 때문에, github에 파일을 올릴 때마다 아이디, 패스워드를 입력하지 않아도 된다는 장점이 있다.
+특히 github는 파일을 올릴 때마다 인증이 이루어져야 하므로 SSH key를 사용하여 이 과정을 단순화시킬 수 있다.
