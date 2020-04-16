@@ -9,7 +9,7 @@ int main()
 	const int arrsize = 10;
 	int* arr = new int[arrsize];
 	srand((unsigned int)time(NULL));
-	cout << "Array arr: " ;
+	cout << "Array arr: ";
 	for (int i = 0; i < arrsize; i++)
 	{
 		arr[i] = (rand() % 10);
@@ -17,17 +17,18 @@ int main()
 	}
 	cout << endl;
 
-	//Given the int array arr, generate another int array output.
-	//whose element indiciates how many elements in arr is smaller than arr[i].
-	//For example, if arr is given as [5,8,5,6,8,1,5,9,5,8], 
-	//output should be [1,6,1,5,6,0,1,9,1,6]. 
-
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+	for (int a = 0; a < arrsize; a++) {
+		int check = 0;
+		for (int b = 0; b < arrsize; b++) {
+			if (arr[a] > arr[b]) {
+				check++;
+			}
+			output[a] = check;
+		}
+	}
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
