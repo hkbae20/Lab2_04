@@ -25,9 +25,15 @@ int main()
 	int* output = new int[arrsize];
 	cout << "Array output: ";
 
-	/***********************************
-	Implement the code here!
-	************************************/
+	for (int i = 0; i < arrsize; i++) {
+		while (true) {
+			output[i] = (rand() % 10);
+			if (output[i] <= arr[i]) {
+				break;
+			}
+		}
+
+	}
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
