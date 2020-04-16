@@ -16,6 +16,7 @@ int main()
 		cout << arr[i] << " ";
 	}
 	cout << endl;
+	
 
 	//Given the int array arr, generate another int array output.
 	//whose element indiciates how many elements in arr is smaller than arr[i].
@@ -24,6 +25,15 @@ int main()
 
 	int* output = new int[arrsize];
 	cout << "Array output: ";
+	for (int i = 0; i < 10; i++) {
+		int count = 0;
+		for (int i2 = 0; i2 < 10; i2++) {
+			if (arr[i] > arr[i2]) {
+				count++;
+			}
+		}
+		output[i] = count;
+	}
 
 	/***********************************
 	Implement the code here!
