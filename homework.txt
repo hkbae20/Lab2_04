@@ -1,0 +1,2 @@
+1. gitignore는 git에서 특정 파일이나 디렉토리를 관리 대상에서제외시킬 수 있는 설정파일이다. 
+2. SSH key는 서버에 접속할 때 비밀번호 대신 특정한 key를 제출하는 방식이다. SSH key는 private key와 public key가 있는데 SSH 접속을 시도하면 local machine에서 private key와 public key가 서로 매칭되는지 확인한다. SSH key를 통해서 접속하는 방식은 private key가 외부에 노출되지 않기 때문에 github account information을 사용할 때보다 높은 보안수준을 유지할 수 있다. 
