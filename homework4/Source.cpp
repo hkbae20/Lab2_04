@@ -35,9 +35,6 @@ int main()
 		}
 		output[i] = count;
 	}
-	/***********************************
-	Implement the code here!
-	************************************/
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
