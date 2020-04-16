@@ -3,6 +3,10 @@
 #include <time.h>
 using namespace std;
 
+bool isSmaller(int input, int other)
+{
+	return other < input;
+}
 
 int main()
 {
@@ -24,10 +28,19 @@ int main()
 
 	int* output = new int[arrsize];
 	cout << "Array output: ";
+	for (int outer = 0; outer < arrsize; outer++)
+	{
+		int count_smaller = 0;
+		for (int inner = 0; inner < arrsize; inner++)
+		{
+			if (isSmaller(arr[outer], arr[inner]))
+			{
+				count_smaller++;
+			}
 
-	/***********************************
-	Implement the code here!
-	************************************/
+			output[outer] = count_smaller;
+		}
+	}
 
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
