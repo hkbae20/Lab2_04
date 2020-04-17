@@ -1,2 +1,13 @@
 1. What is .gitignore? You can write the answer either in Korean or English.
+.gitignore은 git를 활용하여 버전관리를 할 때에 다루지 않을 파일들의 이름을 저장하는 파일을 이야기한다. 
+예를 들어, cpp 코드들을 버전관리할 때를 생각해 보면 cpp파일을 컴파일할 때 exe 파일도 같이 생성된다.
+그런데 이런 exe 파일들은 버전관리를 할 때 관심이 없기 때문에 .gitignore 파일 목록에 저장하여
+버전관리에서 제외시킨다. 
 2. Why do Github users need an SSH key pair? (Users can use either SSH key pair or github account info.) Please write down a brief explanation of SSH key.
+
+SSH 키란? SSH key는 서버에 접속할 때 키를 활용하여 접속하는 방식이다. 클라이언트가 서버에 접속하고자 하면 클라이언트가 보낸 private key를 원격 서버가 public key를 통해 해석했을 때
+특정 조건을 만족시키면(즉 뚫리면) 접속이 가능해진다. 서버에는 비밀번호로도 접속할 수 있지만 비밀번호는 무차별 대입 공격에 의해 뚫릴 수 있다. 
+SSH 키 방식은 비밀번호 방식보다  안전하다. 
+
+Github User 에게 SSH가 필요한 이유는 로그인 없이 서버접속을 하기 위함도 있고, public key와 private key가 충분히 길어서 무차별 대입 공격에 의해 뚫릴 수 없는 강한 보안
+을 통해 접속하고자 하는 목적도 있다. 

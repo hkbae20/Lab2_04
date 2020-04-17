@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
 #include <time.h>
 using namespace std;
 
@@ -28,7 +29,13 @@ int main()
 	/***********************************
 	Implement the code here!
 	************************************/
-
+	for (int i = 0; i < arrsize; i++) {
+		int cntt = 0; 
+		for (int j = 0; j < arrsize; j++) {
+			if (arr[j] < arr[i]) cntt++;
+		}
+		output[i] = cntt; 
+	}
 	for (int i = 0; i < arrsize; i++) {
 		cout << output[i] << " ";
 	}
