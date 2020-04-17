@@ -24,6 +24,15 @@ int main()
 
 	int* output = new int[arrsize];
 	cout << "Array output: ";
+	for (int i = 0; i < arrsize; i++) {
+		int x = 0;
+		for (int j = 0; j < arrsize; j++) {
+			if (arr[i] > arr[j]) {
+				x++;
+			}
+		}
+		output[i] = x;
+	}
 
 	/***********************************
 	Implement the code here!
