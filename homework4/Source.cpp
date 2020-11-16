@@ -34,7 +34,7 @@ int main()
 			if (i == j) continue;
 			if (arr[j] < arr[i]) cnt += 1;
 		}
-		output[i] = cnt;
+		output[
 	}
 
 
